@@ -34,8 +34,8 @@ public class ProductController {
 	
 	@GetMapping("/products")
 	public ResponseEntity<List<Product> >getAllProduct(){
-		List<Product> pl = ps.getAllProducts();
-		return new ResponseEntity<List<Product>>(pl,HttpStatus.OK);
+		List<Product> products = ps.getAllProducts();
+		return new ResponseEntity<List<Product>>(products,HttpStatus.OK);
 		
 	}
 	
